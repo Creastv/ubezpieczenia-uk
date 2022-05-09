@@ -348,6 +348,11 @@ header {
   background-color: #c11627;
 }
 
+#hero .bg-wraper .thx {
+  text-align: center;
+  padding: 100px 0 !important;
+}
+
 #hero .bg-wraper .form-wraper {
   position: relative;
   z-index: 1;
@@ -361,6 +366,14 @@ header {
   #hero .bg-wraper .form-wraper {
     margin-top: 0;
   }
+}
+
+#hero .bg-wraper .form-wraper h4 {
+  font-size: 31px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 #about {
