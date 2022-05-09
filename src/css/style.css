@@ -224,20 +224,20 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 1032px) {
-  .title-sec h2 {
-    font-size: 28px;
-  }
-}
-
 @media only screen and (max-width: 696px) {
   .title-sec h2 {
-    font-size: 21px;
+    font-size: 31px;
   }
 }
 
 header {
   padding: 40px 0;
+}
+
+@media only screen and (max-width: 696px) {
+  header {
+    padding: 20px 0;
+  }
 }
 
 #hero {
@@ -406,6 +406,12 @@ header {
 
 #about h2 {
   font-size: 41px;
+}
+
+@media only screen and (max-width: 696px) {
+  #about h2 {
+    font-size: 31px;
+  }
 }
 
 #about .signature {
@@ -594,6 +600,10 @@ header {
 #offerts .offer .offer-wraper .img img {
   width: 100%;
   height: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translate(0px, -10px);
+          transform: translate(0px, -10px);
 }
 
 #offerts .offer .offer-wraper .offer-title {
@@ -610,6 +620,10 @@ header {
   font-size: 18px;
 }
 
+#offerts .offer .offer-wraper .offer-title .btn {
+  padding: 5px 30px;
+}
+
 #offerts .offer .offer-wraper:hover {
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
@@ -617,6 +631,11 @@ header {
 
 #offerts .offer .offer-wraper:hover .offer-title {
   bottom: 0px;
+}
+
+#offerts .offer .offer-wraper:hover .img img {
+  -webkit-transform: translate(0px, -50px);
+          transform: translate(0px, -50px);
 }
 
 #cta {

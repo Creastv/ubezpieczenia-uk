@@ -168,11 +168,9 @@ a {
     @media #{$lg} {
       font-size: 31px;
     }
-    @media #{$md} {
-      font-size: 28px;
-    }
+
     @media #{$sm} {
-       font-size: 21px;
+       font-size: 31px;
     }
   }
 }
@@ -180,6 +178,10 @@ a {
 
 header{
   padding: 40px 0;
+  @media #{$sm} {
+    padding: 20px 0;
+
+  }
 }
 
 /////////////////////////////////////////////////////hero
@@ -303,6 +305,9 @@ header{
   }
   h2{
     font-size: 41px;
+    @media #{$sm} {
+      font-size: 31px;
+    }
   }
   
   .signature{
@@ -455,6 +460,8 @@ header{
         img{
           width: 100%;
           height: auto;
+          transition: all .3s;
+          transform: translate(0px, -10px);
         }
       }
       .offer-title{
@@ -467,11 +474,19 @@ header{
         h3{
           font-size: 18px;
         }
+        .btn{
+          padding: 5px 30px;
+        }
       }
       &:hover{
         box-shadow: 0 0 20px 0 rgba(0,0,0, .1);
         .offer-title{
           bottom:0px;
+        }
+        .img{
+          img{
+            transform: translate(0px, -50px);
+          }
         }
       }
     }
