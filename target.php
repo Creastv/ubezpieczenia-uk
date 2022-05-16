@@ -15,7 +15,7 @@ if (isset($_REQUEST['signup'])) {
   //End of validation 
 
 if (isset($_REQUEST['signup'])) {
-  if (empty($errors)) { 
+ if (empty($errors)) { 
 
 
 //sumbission data
@@ -43,7 +43,7 @@ $zgoda = $_POST['zgoda'];
                     <thead>
                       <tr>
                         <td align='center' colspan='2' style='border-bottom:1px solid; background:#585858; padding:20px;'>
-                         <img class='margin:0px; display:block; width:150px;' src='http://roial.pl/wp-content/uploads/2017/05/logo-roial.png'>
+                         <img class='margin:0px; display:block; width:150px;' src='https://ubezpieczeniadlaciebie.co.uk/lp/src/img/logo.png'>
                        </td>
                       </tr>
                       <tr>
@@ -66,13 +66,14 @@ $zgoda = $_POST['zgoda'];
                       <td style='border-bottom:1px solid ;'>{$email}</td>     
                     </tr>
                     <tr>
-                      <td style='border-bottom:1px solid ;' >Zgoda przetwarzania danych:</td>
-                      <td style='border-bottom:1px solid ;'>{$zgoda}</td>     
+                      <td style='border-bottom:1px solid ;' >Zainteresowany usługą:</td>
+                      <td style='border-bottom:1px solid ;'>{$usluga}</td>     
                     </tr>
+
                   </tbody>
                   <tfoot>
                    <tr>
-                      <td colspan='2' style='text-align:center; background:#585858; color:#fff;padding:10px;' ><b>LandingPage:</b> podnies-konwersje.pl</td>
+                      <td colspan='2' style='text-align:center; background:#585858; color:#fff;padding:10px;' ><b>LandingPage:</b> ubezpieczeniadlaciebie.co.uk/lp/</td>
                     </tr>
                    
                   </tfoot>
@@ -82,9 +83,13 @@ $zgoda = $_POST['zgoda'];
                   ";
 
 // Send
-mail("piotr@roial.pl","Leed złorzony dnia:{$date}",$emailbody,$headers);
+mail("lukasz@myclover.co.uk","Formularz wysłany:{$date}",$emailbody,$headers);
 // Send
- 
+
+
+  };
+};
+};
 if (isset($_POST['signup']))
     {   
     ?>
@@ -93,8 +98,3 @@ window.location = "thx.html";
 </script>
 <?php
     }
-
-  }
-}
-
-?>

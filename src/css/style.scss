@@ -631,6 +631,8 @@ header {
 
 ////////////////////////////////////////////// footer contact
 .contact {
+  position: relative;
+  z-index: 2;
   .corners {
     width: calc(100vw - 10px);
     margin-left: -50vw;

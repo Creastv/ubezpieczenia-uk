@@ -35,7 +35,7 @@ $(document).ready(function () {
           }
         }
       },
-     usluga: {
+      usluga: {
         message: "Pole wymagane!",
         validators: {
           notEmpty: {
@@ -63,7 +63,7 @@ $(document).ready(function () {
           },
           stringLength: {
             min: 9,
-            max: 9,
+            max: 9
             // message: "Wprowadź 9 cyfrowy nr telefonu"
           }
         }
@@ -82,10 +82,28 @@ $(document).ready(function () {
   });
 });
 
-
 // document.querySelector(".zgoda-tooltiop").addEventListener("mouseover", function () {
 //     document.querySelector(".zgoda-hidden").style.display = "block";
 // });
 // document.querySelector(".zgoda-tooltiop").addEventListener("mouseout", function () {
 //     document.querySelector(".zgoda-hidden").style.display = "none";
 // });
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
+
+const btnFocus = document.querySelectorAll(".btn-form");
+for (let i = 0; i < btnFocus.length; i++) {
+  btnFocus[i].addEventListener("click", function () {
+    console.log(btnFocus[i].getAttribute("data-usl"));
+    document.querySelector("input[name=firstname]").focus();
+    document.querySelector("select[name=usluga]").value = btnFocus[i].getAttribute("data-usl");
+  });
+}

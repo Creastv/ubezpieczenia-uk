@@ -835,6 +835,11 @@ header {
   }
 }
 
+.contact {
+  position: relative;
+  z-index: 2;
+}
+
 .contact .corners {
   width: calc(100vw - 10px);
   margin-left: -50vw;
