@@ -14,7 +14,8 @@ body {
   overflow-x: hidden;
 }
 
-:after, :before {
+:after,
+:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -337,7 +338,7 @@ header {
 }
 
 #hero .bg-wraper .content ul li:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
@@ -570,7 +571,7 @@ header {
 }
 
 #vouchedfor h3 b {
-  color: #F9AB03;
+  color: #f9ab03;
 }
 
 #vouchedfor p {
@@ -585,12 +586,184 @@ header {
 
 #vouchedfor .label a {
   display: block;
-  background-color: #09607E;
+  background-color: #09607e;
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
   text-align: center;
   border-radius: 5px;
+}
+
+#testimonials {
+  position: relative;
+}
+
+#testimonials:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: white;
+  background: -webkit-gradient(linear, right top, left top, color-stop(20%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media only screen and (max-width: 696px) {
+  #testimonials:after {
+    display: none;
+  }
+}
+
+#testimonials .wraper {
+  padding-left: calc((100% - 1400px) / 2);
+}
+
+#testimonials .wraper .swiper-wrapper {
+  padding: 50px 0 50px 20px;
+}
+
+#testimonials .swiper-slide {
+  width: 60%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: initial;
+}
+
+@media only screen and (max-width: 696px) {
+  #testimonials .swiper-slide {
+    width: 100%;
+  }
+}
+
+#testimonials .review {
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+#testimonials .review .review-wraper {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: calc(100% - 20px);
+}
+
+@media only screen and (max-width: 696px) {
+  #testimonials .review .review-wraper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+#testimonials .review .review-wraper span {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonials .review .review-wraper span svg {
+  margin-right: 10px;
+}
+
+#testimonials .review .review-wraper .left {
+  width: 30%;
+}
+
+@media only screen and (max-width: 696px) {
+  #testimonials .review .review-wraper .left {
+    width: 100%;
+  }
+}
+
+#testimonials .review .review-wraper .left .content {
+  padding: 20px;
+}
+
+#testimonials .review .review-wraper .left .content img {
+  margin: 30px 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 696px) {
+  #testimonials .review .review-wraper .left .content {
+    padding: 10px;
+  }
+}
+
+#testimonials .review .review-wraper .right {
+  width: 60%;
+}
+
+@media only screen and (max-width: 696px) {
+  #testimonials .review .review-wraper .right {
+    width: 100%;
+  }
+}
+
+#testimonials .review .review-wraper .right .content {
+  padding: 10px 30px;
+  border-left: 1px solid #d7d7d7d7;
+  height: calc(100% - 20px);
+}
+
+@media only screen and (max-width: 696px) {
+  #testimonials .review .review-wraper .right .content {
+    border: 0px;
+    padding: 10px;
+  }
+}
+
+#testimonials .arrow {
+  padding-left: calc((100% - 1400px) / 2);
+  width: 100%;
+}
+
+#testimonials .swiper-button-prev {
+  z-index: 3;
+  background: #fff;
+  border: 1px solid #d7d7d7d7;
+  -webkit-box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  left: calc((100% - 1400px) / 2);
+}
+
+#testimonials .swiper-button-next {
+  z-index: 30;
+  background: #fff;
+  border: 1px solid #d7d7d7d7;
+  -webkit-box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+}
+
+#testimonials .swiper-button-next::after,
+#testimonials .swiper-button-prev::after {
+  font-size: 12px;
+  color: #c11627;
 }
 
 #offerts {
@@ -606,15 +779,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #offerts .offer .offer-wraper .img img {
   width: 100%;
   height: auto;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   -webkit-transform: translate(0px, -10px);
           transform: translate(0px, -10px);
 }
@@ -625,8 +798,8 @@ header {
   bottom: -75px;
   width: 100%;
   background-color: #fff;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #offerts .offer .offer-wraper .offer-title h3 {
@@ -940,7 +1113,8 @@ form .form-group {
   position: relative;
 }
 
-form input, form select {
+form input,
+form select {
   border-radius: 100px;
   padding: 15px 30px;
   border: 0px;
@@ -957,7 +1131,8 @@ form .ch .checkbox label {
 }
 
 form .ch .checkbox label input {
-  width: 50px;
+  width: 20px;
+  margin-right: 10px;
 }
 
 form .ch .checkbox label span {
@@ -978,7 +1153,8 @@ form .ch .checkbox label .zgoda-tooltiop .zgoda-hidden {
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-form .has-error input, form .has-error select {
+form .has-error input,
+form .has-error select {
   border: 1px solid red !important;
 }
 
@@ -991,7 +1167,8 @@ form .has-error .help-block {
   color: #c11627;
 }
 
-form .has-success input, form .has-success select {
+form .has-success input,
+form .has-success select {
   border: 1px solid green !important;
 }
 
